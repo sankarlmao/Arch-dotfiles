@@ -1,0 +1,19 @@
+istener{
+	timeout = 120
+	on-timeout = notify-send "Screen 2 minutes il  OFF akum"
+}  
+listener{
+        timeout = 250
+        on-timeout = notify-send "SCREEN WILL TURN OFF IN 50 SECS"
+}
+listener {
+    timeout = 300                           # 5min
+    on-timeout = hyprlock                   # command to run when timeout has passed
+    on-resume = notify-send "Welcome back!" # command to run when activity is detected after timeout has fired.
+}
+
+listener {
+    timeout = 900                           # 15min
+    on-timeout = hyprctl dispatch dpms off  # command to run when timeout has passed
+    on-resume = hyprctl dispatch dpms on    # command to run when activity is detected after timeout has fired.
+}
