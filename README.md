@@ -5,7 +5,7 @@ This repo contains configuration files for my Arch Linux setup. Includes configs
 - Kitty Terminal
 - Hyprland WM
 - Neovim
-- Zsh
+- Bash
 - Waybar
 - Rofi
 
