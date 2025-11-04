@@ -2,7 +2,7 @@
 
 This repo contains configuration files for my Arch Linux setup. Includes configs for:
 
-- Kitty Terminal
+- Kitty Terminal(with minimal starship theme)
 - Hyprland WM
 - Neovim
 - Bash
